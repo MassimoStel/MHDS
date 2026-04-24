@@ -28,7 +28,7 @@ Short abbreviations used throughout the paper to refer to the language models un
 | Qwen3.5-9B | Qwen3.5-9B-Thinking (MoE) | `Qwen/Qwen3.5-9B` |
 | Qwen3-4B-TH | Qwen3-4B-Thinking | `Qwen3-4B-Thinking-2507` |
 | Qwen3-30B | Qwen3-30B-A3B (MoE) | `Qwen/Qwen3-30B-A3B` |
-| Grok-4.1-R | Grok-4.1-Reasoning | `N/A (Closed-source, xAI API access)` |
+| Grok-4.1-R | Grok-4.1-Reasoning | `xAI API access` |
 
 ---
 ## 2. Metadata

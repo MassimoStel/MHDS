@@ -31,7 +31,7 @@ The table below maps each filename (abbreviation) to its full model name and the
 | `Qwen3.5-9B.csv` | Qwen3.5-9B-Thinking (MoE) | `Qwen/Qwen3.5-9B` |
 | `Qwen3-4B-TH.csv` | Qwen3-4B-Thinking | `Qwen3-4B-Thinking-2507` |
 | `Qwen3-30B.csv` | Qwen3-30B-A3B (MoE) | `Qwen/Qwen3-30B-A3B` |
-| `Grok-4.1-R.csv` | Grok-4.1-Reasoning | N/A (closed-source, xAI API access) |
+| `Grok-4.1-R.csv` | Grok-4.1-Reasoning | `xAI API access` |
 
 ## Codebook
 
