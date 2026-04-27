@@ -8,7 +8,7 @@ This codebook provides detailed information about the data structures and encodi
 
 The figure below illustrates the full data generation pipeline, from persona synthesis and mode assignment to task administration and dataset construction.
 
-![Infographic](test.png)
+![Infographic](Infographic.png)
 
 ## 1. Dataset Overview
 
@@ -216,7 +216,7 @@ ___
 |`topic_1` | Family support | *Does your family support your mental wellbeing? What is their attitude towards mental health?* |
    |`topic_2` | Drug treatment |*Did you ever take drugs for improving your mental health? Did you have any side effects?*|
 |`topic_3` | Professional support | *Did you ever meet a therapist, psychologist or life coach? How was your professional relationship with them?* |
-  |`topic_4` |  Stigma and discrimination | *Did you ever meet a therapist, psychologist or life coach? How was your professional relationship with them?*|
+  |`topic_4` |  Stigma and discrimination | *Did you ever face stigma or discrimination due to mental health issues? How did you cope with it?*|
 |`topic_5` | AI-Psychologist Support| *Did you ever use mental health apps or AI-psychologists? Were they helpful?*|
 |`topic_6` | Emotional Recall Task |*Please recall 10 English words to describe feelings you have experienced during the past month*|
  |`topic_7` | OCD Symptoms |  *Did you ever experience intrusive thoughts or obsessive behaviors? How did you manage them?*|
