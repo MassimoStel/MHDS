@@ -4,6 +4,11 @@
 This codebook provides detailed information about the data structures and encoding schemas used in the **Mental Health Digital Shadows** dataset. The dataset contains generations from different Large Language Models (LLMs) which have been cleaned and validated.
 
 ---
+## Pipeline Overview
+
+The figure below illustrates the full data generation pipeline, from persona synthesis and mode assignment to task administration and dataset construction.
+
+![Infographic](test.png)
 
 ## 1. Dataset Overview
 
