@@ -214,15 +214,17 @@ ___
 | **Dataset entry** | **Topic label** | **Topic question** |
 |:------------|:--------------------|:----------------|
 |`topic_1` | Family support | *Does your family support your mental wellbeing? What is their attitude towards mental health?* |
-   |`topic_2` | Drug treatment |*Did you ever take drugs for improving your mental health? Did you have any side effects?*|
+   |`topic_2` | Drugs treatment |*Did you ever take drugs for improving your mental health? Did you have any side effects?*|
 |`topic_3` | Professional support | *Did you ever meet a therapist, psychologist or life coach? How was your professional relationship with them?* |
   |`topic_4` |  Stigma and discrimination | *Did you ever face stigma or discrimination due to mental health issues? How did you cope with it?*|
 |`topic_5` | AI-Psychologist Support| *Did you ever use mental health apps or AI-psychologists? Were they helpful?*|
-|`topic_6` | Emotional Recall Task |*Please recall 10 English words to describe feelings you have experienced during the past month*|
- |`topic_7` | OCD Symptoms |  *Did you ever experience intrusive thoughts or obsessive behaviors? How did you manage them?*|
+ |`topic_6` | OCD Symptoms |  *Did you ever experience intrusive thoughts or obsessive behaviors? How did you manage them?*|
 
+## 6. Emotional Recall Task (`ert`)
 
-## 6. DASS-21 responses
+*Please recall 10 English words to describe feelings you have experienced during the past month*
+
+## 7. DASS-21 responses
 
 
 #### Score (`dass_item_{n}_score`)

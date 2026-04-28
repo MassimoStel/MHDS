@@ -9,6 +9,25 @@ The dataset enables researchers to compare distress levels across individuals, a
 
 ---
 
+## Repository Structure
+
+```
+├── data/                   # CSV files, one per LLM
+├── `codebook.md`           # Codebook for all the used variables      
+├── generate_data.py        # Script to reproduce the dataset generation pipeline
+├── requirements.txt        # Python dependencies
+└── README.md
+```
+
+To reproduce the data generation pipeline, install the required dependencies and run the generation script:
+
+```bash
+pip install -r requirements.txt
+jupyter notebook generate_data.ipynb
+```
+
+---
+
 ## Data Folder
 
 The `data` directory contains **15 CSV files**, one per LLM evaluated in the study. Each file is named after the model's abbreviation (e.g., `DSK-R1-32B.csv`, `Mistral-S3.2.csv`) and contains all generations produced by that model across both experimental modes (LLM Mode and Human Mode).
