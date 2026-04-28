@@ -10,7 +10,7 @@ The figure below illustrates the full data generation pipeline, from persona syn
 
 ![Infographic](Infographic.png)
 
-## 1. Dataset Overview
+## Dataset Overview
 
 #### Model Legend
 
@@ -36,7 +36,7 @@ Short abbreviations used throughout the paper to refer to the language models un
 | Grok-4.1-R | Grok-4.1-Reasoning | `xAI API access` |
 
 ---
-## 2. Metadata
+## Metadata
 
 #### Path ID (`path`) 
 
@@ -56,7 +56,7 @@ Automatic summary of the model's reasoning.
 ---
 
 
-## 3. Numeric Variables
+## Numeric Variables
 
 #### Age (`age`)
 Integer values from 18 to 90.
@@ -209,7 +209,7 @@ These variables map semantic meaning directly onto a numerical scale according t
 
 ___
 
-## 5. Mental Health Topics
+## Mental Health Topics
 
 | **Dataset entry** | **Topic label** | **Topic question** |
 |:------------|:--------------------|:----------------|
@@ -220,11 +220,16 @@ ___
 |`topic_5` | AI-Psychologist Support| *Did you ever use mental health apps or AI-psychologists? Were they helpful?*|
  |`topic_6` | OCD Symptoms |  *Did you ever experience intrusive thoughts or obsessive behaviors? How did you manage them?*|
 
-## 6. Emotional Recall Task (`ert`)
+
+## Emotional Recall Task (`ert`)
 
 *Please recall 10 English words to describe feelings you have experienced during the past month*
 
-## 7. DASS-21 responses
+The generated personas were asked to freely recall 10 English words describing feelings experienced in the past month. 
+The words are stored as a list of strings (e.g., `["happy", "anxious", "tired", ...]`).
+This task provides an unstructured, self-generated snapshot of the participant's recent emotional landscape.
+
+## DASS-21 responses
 
 
 #### Score (`dass_item_{n}_score`)
