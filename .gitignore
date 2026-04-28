@@ -1,1 +1,17 @@
+# macOS
 .DS_Store
+
+# Notebook output dir produced by data_generation_MHDS.ipynb
+runs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment files
+.env
+.env.local

@@ -3,12 +3,26 @@
 
 This codebook provides detailed information about the data structures and encoding schemas used in the **Mental Health Digital Shadows** dataset. The dataset contains generations from different Large Language Models (LLMs) which have been cleaned and validated.
 
+## Table of contents
+
+- [Pipeline Overview](#pipeline-overview)
+- [Dataset Overview](#dataset-overview)
+- [Metadata](#metadata)
+- [Numeric Variables](#numeric-variables)
+- [Categorical variables](#categorical-variables)
+  - [Automatically Encoded Variables](#automatically-encoded-variables)
+  - [Manually Encoded Variables](#manually-encoded-variables)
+- [Mental Health Topics](#mental-health-topics)
+- [Emotional Recall Task (`ert`)](#emotional-recall-task-ert)
+- [DASS-21 responses](#dass-21-responses)
+- [License](#license)
+
 ---
 ## Pipeline Overview
 
 The figure below illustrates the full data generation pipeline, from persona synthesis and mode assignment to task administration and dataset construction.
 
-![Infographic](Infographic.png)
+![Infographic](infographic.png)
 
 ## Dataset Overview
 
@@ -23,17 +37,17 @@ Short abbreviations used throughout the paper to refer to the language models un
 | DSK-R1-32B | DeepSeek-R1-Distill-Qwen-32B | `deepseek-ai/DeepSeek-R1-Distill-Qwen-32B` |
 | DSK-R1-70B | DeepSeek-R1-Distill-Llama-70B | `deepseek-ai/DeepSeek-R1-Distill-Llama-70B` |
 | GPT-OSS | GPT-OSS-20B | `openai/gpt-oss-20b` |
-| Granite-4H-T | Granite 4.0 H Tiny (7B, MoE hybrid) | `ibm-granite/granite-4.0-h-tiny` |
-| Magistral-S | Magistral Small 2506 (MoE reasoning) | `mistralai/Magistral-Small-2506` |
+| Granite-4H-T | Granite 4.0 H Tiny (7B) | `ibm-granite/granite-4.0-h-tiny` |
+| Magistral-S | Magistral Small 2506 (Reasoning) | `mistralai/Magistral-Small-2506` |
 | Ministral-14B-R | Ministral 3 14B Reasoning 2512 | `mistralai/Ministral-3-14B-Reasoning-2512` |
 | Mistral-S4 | Mistral Small 4 (119B MoE, 2603) | `mistralai/Mistral-Small-4-119B-2603` |
 | Mistral-S3.2 | Mistral Small 3.2 24B Instruct 2506 | `mistralai/Mistral-Small-3.2-24B-Instruct-2506` |
 | Phi-4-R+ | Microsoft Phi-4-reasoning-plus (14B) | `microsoft/Phi-4-reasoning-plus` |
 | Qwen3-4B-IN | Qwen3-4B-Instruct | `Qwen/Qwen3-4B-Instruct-2507` |
-| Qwen3.5-9B | Qwen3.5-9B-Thinking (MoE) | `Qwen/Qwen3.5-9B` |
-| Qwen3-4B-TH | Qwen3-4B-Thinking | `Qwen3-4B-Thinking-2507` |
+| Qwen3.5-9B | Qwen3.5-9B | `Qwen/Qwen3.5-9B` |
+| Qwen3-4B-TH | Qwen3-4B-Thinking | `Qwen/Qwen3-4B-Thinking-2507` |
 | Qwen3-30B | Qwen3-30B-A3B (MoE) | `Qwen/Qwen3-30B-A3B` |
-| Grok-4.1-R | Grok-4.1-Reasoning | `xAI API access` |
+| Grok-4.1-R | Grok-4.1-Reasoning | `N/A (Closed-source, xAI API access)` |
 
 ---
 ## Metadata
@@ -51,7 +65,7 @@ LLM role assigned
 
 #### Summary of the reasoning (`reasoning_summary`)
 
-Automatic summary of the model's reasoning.
+Reasoning summary produced by the model alongside the structured response.
 
 ---
 
@@ -69,12 +83,12 @@ Integer count of the total number of hobbies given (2-5).
 
 ---
 
-## 4. Categorical variables
+## Categorical variables
 
 The dataset utilizes two methods for encoding demographic information: **automatic mapping** and **manual mapping**.
 
 
-### 4.1 Automatically Encoded Variables
+### Automatically Encoded Variables
 
 These variables were encoded algorithmically using `LabelEncoder` for alphabetical sorting.
 
@@ -122,7 +136,7 @@ These variables were encoded algorithmically using `LabelEncoder` for alphabetic
 | 5 | Islam        |
 | 6 | Judaism      |
 
-### 4.2 Manually Encoded Variables
+### Manually Encoded Variables
 
 These variables map semantic meaning directly onto a numerical scale according to manual definitions. Note that DASS-related symptoms reuse an ordinal scale for severity.
 
@@ -212,13 +226,13 @@ ___
 ## Mental Health Topics
 
 | **Dataset entry** | **Topic label** | **Topic question** |
-|:------------|:--------------------|:----------------|
-|`topic_1` | Family support | *Does your family support your mental wellbeing? What is their attitude towards mental health?* |
-   |`topic_2` | Drugs treatment |*Did you ever take drugs for improving your mental health? Did you have any side effects?*|
-|`topic_3` | Professional support | *Did you ever meet a therapist, psychologist or life coach? How was your professional relationship with them?* |
-  |`topic_4` |  Stigma and discrimination | *Did you ever face stigma or discrimination due to mental health issues? How did you cope with it?*|
-|`topic_5` | AI-Psychologist Support| *Did you ever use mental health apps or AI-psychologists? Were they helpful?*|
- |`topic_6` | OCD Symptoms |  *Did you ever experience intrusive thoughts or obsessive behaviors? How did you manage them?*|
+|:------------------|:----------------|:-------------------|
+| `topic_1` | Family support             | *Does your family support your mental wellbeing? What is their attitude towards mental health?* |
+| `topic_2` | Drugs treatment            | *Did you ever take drugs for improving your mental health? Did you have any side effects?* |
+| `topic_3` | Professional support       | *Did you ever meet a therapist, psychologist or life coach? How was your professional relationship with them?* |
+| `topic_4` | Stigma and discrimination  | *Did you ever face stigma or discrimination due to mental health issues? How did you cope with it?* |
+| `topic_5` | AI-Psychologist Support    | *Did you ever use mental health apps or AI-psychologists? Were they helpful?* |
+| `topic_6` | OCD Symptoms               | *Did you ever experience intrusive thoughts or obsessive behaviors? How did you manage them?* |
 
 
 ## Emotional Recall Task (`ert`)
@@ -238,3 +252,21 @@ Score (0-3) assigned to item {n} of the DASS-21. Variable `n` takes values from 
 
 #### Explanation (`dass_item_{n}_explanation`)
 Textual explanation of the assigned score to item {n}. Variable `n` takes values from 1 to 21.
+
+#### Subscale composition
+
+Each DASS-21 subscale is the sum of seven items. To recover the depression, anxiety, and stress totals from the per-item scores, sum the items listed below:
+
+| Subscale | Item indices (`n`) |
+|:---------|:-------------------|
+| **Depression** | 3, 5, 10, 13, 16, 17, 21 |
+| **Anxiety**    | 2, 4, 7, 9, 15, 19, 20 |
+| **Stress**     | 1, 6, 8, 11, 12, 14, 18 |
+
+Each subscale therefore ranges from 0 to 21 on the DASS-21 scale.
+
+---
+
+## License
+
+This dataset is released under the **Creative Commons Zero v1.0 Universal (CC0 1.0)** public-domain dedication — see the `LICENSE` file at the repository root for the full text.
