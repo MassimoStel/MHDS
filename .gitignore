@@ -2,7 +2,7 @@
 .DS_Store
 
 # Notebook output dir produced by data_generation_MHDS.ipynb
-runs/
+MHDS/
 
 # Python
 __pycache__/

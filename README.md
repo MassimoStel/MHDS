@@ -1,13 +1,22 @@
+<p align="center">
+  <img src="banner_FIS.png" alt="FIS — Fondo Italiano per la Scienza" width="100%" />
+</p>
+
 # Mental Health Digital Shadows (MHDS) Dataset
 Digital shadows in Mental Health: A dataset mapping how LLMs simulate Depression, Anxiety, and Stress through language and psychometrics
 
+**Authors**: Emma Franchino¹·†, Rodolfo Rizzi¹·†, Edoardo Sebastiano De Duro¹, Massimo Stella¹·
+
+¹Department of Psychology and Cognitive Science, University of Trento, Trento, Italy
+*†These authors contributed equally.*
+
 ## Overview
 
-This repository accompanies the paper introducing **Mental Health Digital Shadows (MHDS)**, a benchmark of 75,000 LLM outputs from 15 large language models in conversation with human personas and AI assistants. MHDS includes personas derived from cutting-edge model families such as Grok, DeepSeek, Mistral, Qwen, OpenAI, Granite, and Phi. Personas are conditioned on sociodemographics and personality traits alongside assessments of depression, anxiety, and stress levels based on the DASS-21 scale.
+This repository accompanies the paper introducing **Mental Health Digital Shadows (MHDS)**, a benchmark of 75,000 LLM outputs from 15 large language models impersonating human-shadows or acting as LLM-assistants. MHDS spans cutting-edge model families including Grok, DeepSeek, Mistral, Qwen, OpenAI, Granite, and Phi. Human-shadows are generated and conditioned on sociodemographic and psychological attributes, including Big Five traits and DASS-21 severity levels for depression, anxiety, and stress.
 
-The dataset enables researchers to compare distress levels across individuals, analyze the centrality of language use, and study linguistic framing effects between psychometrics and natural language.
+MHDS provides a psychometrically validated dataset for analyzing LLMs performance in mental health conditions, with applications in NLP, AI safety, bias detection, and well-being AI support tools.
 
-**Dataset at a glance:** 5,000 records × 15 models × 74 columns = **75,000 rows** (56,250 human-shadow + 18,750 LLM-assistant). Released under **CC0 1.0**.
+**Dataset structure:** 5,000 records × 15 models × 74 columns = **75,000 rows** (56,250 human-shadow + 18,750 LLM-assistant). Released under **CC0 1.0**.
 
 ---
 
@@ -42,7 +51,7 @@ jupyter notebook data_generation_MHDS.ipynb
 
 ## Data Folder
 
-The `data` directory contains **15 CSV files**, one per LLM evaluated in the study. Each file is named after the model's abbreviation (e.g., `DSK-R1-32B.csv`, `Mistral-S3.2.csv`) and contains all generations produced by that model across both experimental modes (LLM Mode and Human Mode).
+The `data` directory contains **15 CSV files**, one per LLM evaluated in the study. Each file is named after the model's abbreviation (e.g., `DSK-R1-32B.csv`, `Mistral-S3.2.csv`) and contains the cleaned generations produced by that model across both experimental modes (human-shadow and LLM-assistant).
 
 ### Column groups (74 columns per CSV)
 
@@ -85,6 +94,10 @@ The `Codebook.md` contains all the instructions useful to carry out data analysi
 ## License
 
 This dataset is released under the **Creative Commons Zero v1.0 Universal (CC0 1.0)** public-domain dedication — see `LICENSE` for the full text.
+
+## Acknowledgements
+
+This work was supported by the Ministero dell'Università e della Ricerca (MUR) according to Decreto N. 23178 of 10 dicembre 2024 — Bando FIS 2. The authors acknowledge support from CALCOLO, funded by Fondazione VRT, for support with the computational infrastructure simulating LLMs.
 
 ## Contact
 
