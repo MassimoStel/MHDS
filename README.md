@@ -1,14 +1,34 @@
 <p align="center">
-  <img src="banner_FIS.png" alt="FIS — Fondo Italiano per la Scienza" width="100%" />
+  <img src="./logofis.png" alt="FIS logo" height="180">
+  <img src="./PENSO_Logo.png" alt="PENSO logo" height="240">
 </p>
 
-# Mental Health Digital Shadows (MHDS) Dataset
+<p align="center">
+  FIS2 Project PENSO - Funded by MUR - CogNosco Lab, University of Trento
+</p>
+
+<h1 align="center">
+  Mental Health Digital Shadows (MHDS) Dataset
+</h1>
+
+<p align="center">
+  🤖 LLMs · 😮 Stress · 😊 Mental Well-being · 😟 Anxiety · 🤔 Depression · 📊 Data
+</p>
+
+
+## If you use this dataset, please cite this paper:
+
 Digital shadows in Mental Health: A dataset mapping how LLMs simulate Depression, Anxiety, and Stress through language and psychometrics
 
-**Authors**: Emma Franchino¹·†, Rodolfo Rizzi¹·†, Edoardo Sebastiano De Duro¹, Massimo Stella¹·
+**Authors**: Emma Franchino¹·†, Rodolfo Rizzi¹·†, Edoardo Sebastiano De Duro¹, Massimo Stella¹*·
 
 ¹Department of Psychology and Cognitive Science, University of Trento, Trento, Italy
 *†These authors contributed equally.*
+
+## Contact
+
+Corresponding author: **Massimo Stella** — [massimo.stella-1@unitn.it](mailto:massimo.stella-1@unitn.it)
+Department of Psychology and Cognitive Science, University of Trento, Italy.
 
 ## Overview
 
@@ -99,7 +119,10 @@ This dataset is released under the **Creative Commons Zero v1.0 Universal (CC0 1
 
 This work was supported by the Ministero dell'Università e della Ricerca (MUR) according to Decreto N. 23178 of 10 dicembre 2024 — Bando FIS 2. The authors acknowledge support from CALCOLO, funded by Fondazione VRT, for support with the computational infrastructure simulating LLMs.
 
-## Contact
+Created within CogNosco Lab - Check our Research: https://cognosco.dipsco.unitn.it/
 
-Corresponding author: **Massimo Stella** — [massimo.stella-1@unitn.it](mailto:massimo.stella-1@unitn.it)
-Department of Psychology and Cognitive Science, University of Trento, Italy.
+<p align="center">
+  <img src="./NewLogoCognosco.png" alt="FIS logo" height="240">
+  <img src="./PENSO_Logo.png" alt="PENSO logo" height="240">
+</p>
+## 
