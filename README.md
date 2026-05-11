@@ -1,6 +1,6 @@
 <p align="center">
   <img src="./logofis.png" alt="FIS logo" height="180">
-  <img src="./PENSO_Logo.png" alt="PENSO logo" height="240">
+  <img src="./PENSO_Logo.png" alt="PENSO logo" height="180">
 </p>
 
 <p align="center">
@@ -125,4 +125,3 @@ Created within CogNosco Lab - Check our Research: https://cognosco.dipsco.unitn.
   <img src="./NewLogoCognosco.png" alt="FIS logo" height="240">
   <img src="./PENSO_Logo.png" alt="PENSO logo" height="240">
 </p>
-## 
