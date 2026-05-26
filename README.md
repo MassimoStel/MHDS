@@ -20,7 +20,7 @@
 
 Digital shadows in Mental Health: A dataset mapping how LLMs simulate Depression, Anxiety, and Stress through language and psychometrics
 
-**Authors**: Emma Franchino¹·†, Rodolfo Rizzi¹·†, Edoardo Sebastiano De Duro¹, Massimo Stella¹*·
+**Authors**: Emma Franchino¹·†, Rodolfo Rizzi¹·†, Edoardo Sebastiano De Duro¹, Ali Aghazadeh Ardebili¹, and Massimo Stella¹*·
 
 ¹Department of Psychology and Cognitive Science, University of Trento, Trento, Italy
 *†These authors contributed equally.*
