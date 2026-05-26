@@ -12,7 +12,7 @@
 </h1>
 
 <p align="center">
-  🤖 LLMs · 😮 Stress · 😊 Mental Well-being · 😟 Anxiety · 🤔 Depression · 📊 Data
+  🤖 LLMs · Mental Well-being · Stress · Anxiety · Depression · 📊 Data
 </p>
 
 
