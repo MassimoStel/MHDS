@@ -48,6 +48,10 @@ The figure above summarises the six-step data generation pipeline (persona rando
 
 ---
 
+## Pooling Data System
+
+A data pooling system, for searching through the dataset and producing automatically data visualisations with a few clicks, is available here: https://github.com/MassimoStel/MHDS-pooling-system/tree/main
+
 ## Repository Structure
 
 ```
